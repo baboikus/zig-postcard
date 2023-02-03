@@ -1,4 +1,6 @@
 const std = @import("std");
+// https://github.com/baboikus/zig-postcard
+
 const print = std.debug.print;
 
 const ALPHABET: [11]u8 = .{ ' ', '|', '_', '/', '\\', '(', '`', ',', '\'', '.', ')' };
@@ -8,20 +10,10 @@ const CODE = [_]u8{ 0x63, 0x71, 0x22, 0x80, 0x93, 0xA5,
 
 const WORDS = [16][]const u8{
     "3A512QBSacQB843A3a4Qb\xC1rA3a3QB92:aca31;3q514Q61RASA3Q;1R",
-    "A3a3Qrq415a3163acq728a3A3q",
-    "rA3a3Q92:BAca31;3q514q",
-    "BaC\x81",
-    "rA3a3QB9",
-    "3acQ",
-    "\xB1rA3a3QB1",
-    "CqB1B",
-    "Bq",
-    "a3A3q9",
-    "CqbQ3a5QB32",
-    "31Bq513\x81Bq415a316",
-    "B728",
-    "Ra",
-    "q41512A316SA\x83Q72843A3a4Qb\xC1",
+    "A3a3Qrq415a3163acq728a3A3q", "rA3a3Q92:BAca31;3q514q",
+    "BaC\x81", "rA3a3QB9", "3acQ", "\xB1rA3a3QB1", "CqB1B",
+    "Bq", "a3A3q9", "CqbQ3a5QB32", "31Bq513\x81Bq415a316",
+    "B728", "Ra", "q41512A316SA\x83Q72843A3a4Qb\xC1",
     "2:aca31;3q514\x812\x81415a3163aca31;3q514qBq3A512QBSacQB843A3a4Qb1",
 };
 
