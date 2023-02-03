@@ -1,6 +1,6 @@
-const std = @import("std");
 // https://github.com/baboikus/zig-postcard
 
+const std = @import("std");
 const print = std.debug.print;
 
 const ALPHABET: [11]u8 = .{ ' ', '|', '_', '/', '\\', '(', '`', ',', '\'', '.', ')' };
